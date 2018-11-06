@@ -23,8 +23,11 @@ int main(int argc, char *argv[])
     std::vector<Forma> listaObj;
 
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    MainWindow window;
+    window.resize(1000,1000);
+    window.setWindowTitle("Computação Gráfica I");
+    window.show();
+
 
     return a.exec();
 }

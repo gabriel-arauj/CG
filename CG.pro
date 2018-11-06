@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui opengl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -40,7 +40,8 @@ SOURCES += \
     Algebra/matrizrotacao.cpp \
     Algebra/pilhamatriz.cpp\
     Algebra/parser.cpp\
-    Algebra/objeto.cpp
+    Algebra/objeto.cpp \
+    glwidget.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -59,7 +60,8 @@ HEADERS += \
     Headers/cone.h \
     Headers/forma.h\
     Headers/parser.h\
-    Headers/objeto.h
+    Headers/objeto.h \
+    glwidget.h
 
 FORMS += \
         mainwindow.ui
